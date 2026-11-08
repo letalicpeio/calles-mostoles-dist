@@ -4,140 +4,164 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Calles de Móstoles · descarga</title>
-<meta name="description" content="Descarga o instala la app Calles de Móstoles en Android o iPhone.">
+<meta name="description" content="Calles de Móstoles: app para aprender y repasar las calles de Móstoles. Instrucciones de instalación para Android e iPhone.">
+<link rel="icon" href="app/icon-192.png">
 <style>
-:root{color-scheme:dark;--bg:#0f172a;--card:#1e293b;--tx:#e2e8f0;--mut:#94a3b8;--ac:#38bdf8}
+:root{color-scheme:dark;--bg:#0f172a;--card:#1e293b;--tx:#e2e8f0;--mut:#94a3b8;--ac:#38bdf8;--ok:#22c55e;--warn:#f59e0b}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:520px;margin:0 auto;padding:28px 16px 40px}
-h1{font-size:1.7rem;margin:0 0 4px}
-p.sub{color:var(--mut);margin:0 0 18px}
-.tabs{display:flex;gap:8px;margin:0 0 18px}
-.tabs button{flex:1;font:inherit;font-weight:600;color:var(--tx);background:var(--card);border:2px solid transparent;border-radius:12px;padding:10px}
-.tabs button.on{border-color:var(--ac)}
-.btn{display:block;text-align:center;background:var(--ac);color:#06202e;font-weight:700;font-size:1.15rem;text-decoration:none;padding:16px;border-radius:14px}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:520px;margin:0 auto;padding:26px 16px 44px}
+header{display:flex;gap:14px;align-items:center;margin:0 0 20px}
+header img{width:64px;height:64px;border-radius:14px;flex:none}
+h1{font-size:1.55rem;line-height:1.2;margin:0}
+header p{margin:4px 0 0;color:var(--mut);font-size:.95rem;line-height:1.35}
+.btn{display:block;text-align:center;background:var(--ac);color:#06202e;font-weight:700;font-size:1.2rem;text-decoration:none;padding:17px;border-radius:14px}
 .btn:active{filter:brightness(.9)}
 .ver{color:var(--mut);font-size:.85rem;text-align:center;margin:8px 0 22px;min-height:1.3em}
-.card{background:var(--card);border-radius:14px;padding:14px 16px;margin:0 0 14px}
-.card h2{font-size:1rem;margin:0 0 8px}
-ol,ul{margin:0;padding-left:1.2rem}
-li{margin:6px 0}
-.warn{border-left:4px solid #f59e0b}
+.card{background:var(--card);border-radius:14px;padding:15px 17px;margin:0 0 14px}
+.card h2{font-size:1.05rem;margin:0 0 9px}
+ol{margin:0;padding-left:1.3rem}
+ol li{margin:10px 0}
+ul{margin:0;padding-left:1.2rem}
+ul li{margin:6px 0}
+.say{background:#0b1220;border-left:3px solid var(--ac);border-radius:6px;padding:6px 10px;margin:6px 0 0;font-size:.92rem;color:var(--tx)}
+.say b{color:var(--ac)}
+.ok{border-left:4px solid var(--ok)}
+.warn{border-left:4px solid var(--warn)}
 .hid{display:none}
-details.diff{background:var(--card);border-radius:14px;padding:12px 16px;margin:0 0 14px}
-details.diff summary{cursor:pointer;font-weight:600}
+.switch{text-align:center;margin:4px 0 18px;font-size:.92rem;color:var(--mut)}
+.switch button{font:inherit;color:var(--ac);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
+details{background:var(--card);border-radius:14px;padding:13px 17px;margin:0 0 12px}
+details summary{cursor:pointer;font-weight:600}
 table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:10px}
 th,td{text-align:left;vertical-align:top;padding:7px 6px;border-top:1px solid #334155}
 th{color:var(--mut);font-weight:600}
 td:first-child{color:var(--mut);width:24%}
+code{font-size:.78rem;word-break:break-all;color:var(--mut)}
 small{color:var(--mut)}
 </style>
 </head>
 <body>
 <main>
-  <h1>Calles de Móstoles</h1>
-  <p class="sub">App para memorizar las calles de Móstoles.</p>
-
-  <div class="tabs">
-    <button id="t-android" class="on">🤖 Android</button>
-    <button id="t-ios">🍎 iPhone</button>
-  </div>
-
-  <section id="android">
-    <a class="btn" href="https://github.com/letalicpeio/calles-mostoles-dist/releases/latest/download/CallesMostoles.apk">⬇️ Descargar la app</a>
-    <div class="ver" id="ver"></div>
-
-    <div class="card">
-      <h2>Cómo instalarla</h2>
-      <ol>
-        <li>Pulsa <b>Descargar la app</b> y espera a que termine.</li>
-        <li>Abre el archivo descargado (en «Descargas» o en la notificación). Si Android lo pide, permite <b>«Instalar apps desconocidas»</b> para el navegador y vuelve a abrir el archivo.</li>
-        <li>Pulsa <b>Instalar</b> y abre «Calles de Móstoles».</li>
-      </ol>
+  <header>
+    <img src="app/icon-192.png" alt="Icono de la app">
+    <div>
+      <h1>Calles de Móstoles</h1>
+      <p>App para aprender y repasar las calles de Móstoles</p>
     </div>
+  </header>
+
+  <!-- ANDROID -->
+  <section id="android">
+    <a class="btn" id="dl" href="https://github.com/letalicpeio/calles-mostoles-dist/releases/latest/download/CallesMostoles.apk">⬇️ Descargar la app</a>
+    <div class="ver" id="ver">Para móviles Android</div>
 
     <div class="card">
-      <h2>Después</h2>
-      <ul>
-        <li>No tendrás que volver a instalar nada: las mejoras se descargan solas al abrir la app, con internet.</li>
-        <li>Verás un aviso verde con las novedades y un botón «Aplicar ahora».</li>
-      </ul>
+      <h2>Cómo instalarla (2 minutos)</h2>
+      <ol>
+        <li>Pulsa <b>Descargar la app</b>.
+          <div class="say">Si el móvil dice <b>«Este tipo de archivo puede dañar el dispositivo»</b>, pulsa <b>Descargar de todos modos</b> (o «Conservar»).</div></li>
+        <li>Cuando termine, pulsa <b>Abrir</b> (o abre el archivo desde la notificación de descargas).
+          <div class="say">Si el móvil dice <b>«Por seguridad, no puede instalar apps desconocidas de esta fuente»</b>, pulsa <b>Ajustes</b>, activa <b>Permitir de esta fuente</b> y vuelve atrás.</div></li>
+        <li>Pulsa <b>Instalar</b>.
+          <div class="say">Si aparece un aviso de <b>Play Protect</b>, pulsa <b>Más detalles</b> y luego <b>Instalar de todos modos</b>.</div></li>
+        <li>Pulsa <b>Abrir</b>. ¡Listo! Ya tienes el icono «Calles de Móstoles».</li>
+      </ol>
     </div>
 
     <div class="card warn">
-      <h2>Si ya tenías una versión anterior de prueba</h2>
-      <p style="margin:0">Desinstálala antes de instalar esta (la firma ha cambiado). Perderás el progreso de la versión de prueba.</p>
+      <h2>¿Por qué salen esos avisos?</h2>
+      <p style="margin:0">Porque la app <b>no viene de Google Play</b>, sino directamente de esta página. Android avisa siempre que se instala algo así. Los avisos no significan que haya un problema: solo salen <b>la primera vez</b>.</p>
     </div>
   </section>
 
+  <!-- IPHONE -->
   <section id="ios" class="hid">
     <a class="btn" href="app/">📲 Abrir la app</a>
-    <div class="ver">Funciona en Safari, sin instalar nada desde la App Store</div>
+    <div class="ver">Para iPhone · no se instala desde la App Store</div>
 
     <div class="card">
-      <h2>Cómo ponerla como app (solo la primera vez)</h2>
+      <h2>Cómo ponerla en tu iPhone (1 minuto)</h2>
       <ol>
         <li>Abre esta página en <b>Safari</b> y pulsa <b>Abrir la app</b>.</li>
         <li>Pulsa el botón <b>Compartir</b> (el cuadrado con una flecha hacia arriba, abajo en el centro).</li>
-        <li>Elige <b>«Añadir a pantalla de inicio»</b> y pulsa <b>Añadir</b>.</li>
-        <li>Abre «Calles Móstoles» desde ese icono. <b>Usa siempre ese icono</b>, no Safari.</li>
+        <li>Elige <b>Añadir a pantalla de inicio</b> y pulsa <b>Añadir</b>.</li>
+        <li>Abre «Calles Móstoles» <b>desde ese icono</b>. Usa siempre ese icono, no Safari.</li>
       </ol>
-    </div>
-
-    <div class="card">
-      <h2>Después</h2>
-      <ul>
-        <li>No hay nada que actualizar: la app siempre se abre con la última versión (con internet).</li>
-        <li>Tu progreso se guarda en el móvil, dentro del icono que hayas añadido.</li>
-      </ul>
     </div>
 
     <div class="card warn">
       <h2>Ten en cuenta</h2>
       <ul>
-        <li>Si tienes el <b>interruptor de silencio</b> del lateral activado, no sonarán los efectos.</li>
-        <li>El progreso de Safari <b>no pasa</b> a la app añadida a la pantalla de inicio: instálala antes de empezar.</li>
+        <li>No es una app de la App Store: es una página web que queda guardada como icono. Funciona igual.</li>
+        <li>Con el <b>interruptor de silencio</b> del lateral activado, no suenan los efectos.</li>
       </ul>
     </div>
   </section>
 
-  <details class="diff">
-    <summary>¿Qué diferencias hay entre Android e iPhone?</summary>
+  <div class="switch" id="sw"></div>
+
+  <!-- CONFIANZA -->
+  <div class="card ok">
+    <h2>¿Es segura? ¿Qué hace la app?</h2>
+    <ul>
+      <li>Sirve para <b>aprender y repasar las calles de Móstoles</b> con juegos y un mapa de estudio.</li>
+      <li>Solo necesita <b>internet</b>. No pide permisos de ubicación, cámara, micrófono, contactos ni fotos.</li>
+      <li><b>No te pide cuenta, correo ni contraseña</b> y no recoge datos personales. Tu progreso se guarda solo en tu móvil.</li>
+      <li>Es <b>gratuita</b> y no tiene publicidad.</li>
+      <li>No está en Google Play ni en la App Store porque se reparte directamente a quien la va a usar.</li>
+      <li>Se actualiza sola al abrirla, con internet. No tendrás que volver a descargarla.</li>
+    </ul>
+  </div>
+
+  <p style="margin:0 0 18px"><small>¿Dudas? Pregunta a quien te envió este enlace antes de instalar.</small></p>
+
+  <details>
+    <summary>Más información</summary>
+    <p style="margin:10px 0 4px"><b>Diferencias entre Android e iPhone</b></p>
     <table>
       <tr><th></th><th>🤖 Android</th><th>🍎 iPhone</th></tr>
-      <tr><td>Qué es</td><td>App instalada (APK)</td><td>La misma app como web, con icono en la pantalla de inicio</td></tr>
-      <tr><td>Instalación</td><td>Descargar e instalar el archivo una vez</td><td>Safari → Compartir → «Añadir a pantalla de inicio»</td></tr>
-      <tr><td>Mejoras</td><td>Se descargan solas al abrir; avisa y puedes aplicarlas. Si una falla, vuelve a la anterior</td><td>Siempre se abre con la última versión, sin avisos</td></tr>
+      <tr><td>Qué es</td><td>App instalada</td><td>La misma app como web, con icono</td></tr>
+      <tr><td>Mejoras</td><td>Se descargan solas; avisa al tenerlas</td><td>Siempre se abre con la última versión</td></tr>
       <tr><td>Sin internet</td><td>El menú abre; el mapa y las fotos necesitan internet</td><td>Necesita internet para abrir</td></tr>
       <tr><td>Sonido</td><td>Normal</td><td>No suena con el interruptor de silencio activado</td></tr>
       <tr><td>Progreso</td><td>Se guarda en el móvil</td><td>Se guarda en el icono añadido; el de Safari no pasa a él</td></tr>
     </table>
-    <p style="margin:10px 0 0"><small>El progreso no se sincroniza entre Android e iPhone. El archivo de Android no se puede instalar en iPhone. Si tienes Android, usa la app (no la web): se actualiza con más seguridad.</small></p>
-  </details>
+    <p style="margin:10px 0 0"><small>El progreso no se sincroniza entre móviles. El archivo de Android no se puede instalar en iPhone.</small></p>
 
-  <p><small>La app solo usa internet para el mapa, las fotos y las mejoras. No pide cuentas ni recoge datos personales; tu progreso se guarda en tu móvil.</small></p>
+    <p style="margin:14px 0 4px"><b>Qué servicios usa</b></p>
+    <p style="margin:0"><small>Para funcionar consulta el mapa (IGN), las fotos de calles (Mapillary) y las mejoras de la app (GitHub). Esos servicios pueden ver la dirección de internet de tu móvil, como cualquier página web. La app no envía ningún dato tuyo.</small></p>
+
+    <p style="margin:14px 0 4px"><b>Comprobar que el archivo es auténtico (opcional)</b></p>
+    <p style="margin:0" id="verif"><small>Cargando…</small></p>
+
+    <p style="margin:14px 0 4px"><b>Datos y créditos</b></p>
+    <p style="margin:0"><small>Calles © colaboradores de OpenStreetMap (ODbL) · portales © Dirección General del Catastro · ortofoto PNOA © IGN España (CC BY 4.0) · fotos © colaboradores de Mapillary (CC BY-SA).</small></p>
+  </details>
 </main>
 <script>
 const $ = id => document.getElementById(id);
-function tab(which) {
+let cur = "android";
+function show(which) {
+  cur = which;
   $("android").classList.toggle("hid", which !== "android");
   $("ios").classList.toggle("hid", which !== "ios");
-  $("t-android").classList.toggle("on", which === "android");
-  $("t-ios").classList.toggle("on", which === "ios");
+  $("sw").innerHTML = which === "android"
+    ? '¿Tienes iPhone? <button id="go">Ver instrucciones para iPhone</button>'
+    : '¿Tienes Android? <button id="go">Ver instrucciones para Android</button>';
+  $("go").onclick = () => show(which === "android" ? "ios" : "android");
 }
-$("t-android").onclick = () => tab("android");
-$("t-ios").onclick = () => tab("ios");
 // se elige solo según el móvil (iPadOS se presenta como Mac con pantalla táctil)
-if (/iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) tab("ios");
-// Muestra la versión publicada (si GitHub no responde, simplemente no se muestra)
-fetch("https://api.github.com/repos/letalicpeio/calles-mostoles-dist/releases/latest")
-  .then(r => r.ok ? r.json() : null)
-  .then(j => {
-    if (!j) return;
-    const f = (j.published_at || "").slice(0, 10).split("-").reverse().join("/");
-    $("ver").textContent = "Última versión: " + (j.name || j.tag_name || "") + (f ? " · " + f : "");
-  })
-  .catch(() => {});
+const esIOS = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+show(esIOS ? "ios" : "android");
+
+// Versión, tamaño y datos de verificación del APK oficial (los publica el script de publicación en apk-info.json)
+fetch("apk-info.json?t=" + Date.now()).then(r => r.ok ? r.json() : null).then(j => {
+  if (!j) { $("verif").innerHTML = "<small>No disponible ahora mismo.</small>"; return; }
+  const mb = (j.size / 1048576).toFixed(1).replace(".", ",");
+  $("ver").textContent = "Para móviles Android · versión " + j.name + " · " + mb + " MB";
+  $("verif").innerHTML = "<small>Versión " + j.name + " (publicada el " + j.date.split("-").reverse().join("/") + "). Huella SHA-256 del archivo:</small><br><code>" + j.sha256 + "</code><br><small>Huella del certificado con el que está firmada:</small><br><code>" + j.cert + "</code>";
+}).catch(() => { $("verif").innerHTML = "<small>No disponible ahora mismo.</small>"; });
 </script>
 </body>
 </html>

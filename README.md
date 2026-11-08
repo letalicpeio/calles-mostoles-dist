@@ -1,11 +1,12 @@
-# Calles de Móstoles · descargas
+# Calles de Móstoles
 
-App Android para memorizar las calles de Móstoles.
+App para aprender y repasar las calles de Móstoles.
 
-- **Instalar:** abre https://letalicpeio.github.io/calles-mostoles-dist/ en tu móvil Android y pulsa «Descargar la app».
-- **Actualizaciones:** la app descarga sola las mejoras del juego al abrirse (release `web`). Cuando hay una versión nueva de la propia app, te lo avisa y te lleva a esta página.
+**Para instalarla:** abre desde tu móvil <https://letalicpeio.github.io/calles-mostoles-dist/> y sigue los pasos. Funciona en Android y en iPhone.
 
-Este repositorio solo contiene los archivos de distribución. El código fuente es privado.
+---
+
+*Esta página es solo para quien necesite los archivos técnicos.* Los archivos de «Releases» marcados como `NO INSTALAR` son los que la app descarga sola para actualizarse; no hay que bajarlos a mano. El código fuente no es público.
 
 Datos: calles © colaboradores de OpenStreetMap (ODbL), portales © Dirección General del Catastro,
 ortofoto PNOA © IGN España (CC BY 4.0), fotos © colaboradores de Mapillary (CC BY-SA).
