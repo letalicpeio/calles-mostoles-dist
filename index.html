@@ -24,6 +24,12 @@ ol,ul{margin:0;padding-left:1.2rem}
 li{margin:6px 0}
 .warn{border-left:4px solid #f59e0b}
 .hid{display:none}
+details.diff{background:var(--card);border-radius:14px;padding:12px 16px;margin:0 0 14px}
+details.diff summary{cursor:pointer;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:10px}
+th,td{text-align:left;vertical-align:top;padding:7px 6px;border-top:1px solid #334155}
+th{color:var(--mut);font-weight:600}
+td:first-child{color:var(--mut);width:24%}
 small{color:var(--mut)}
 </style>
 </head>
@@ -94,6 +100,20 @@ small{color:var(--mut)}
       </ul>
     </div>
   </section>
+
+  <details class="diff">
+    <summary>¿Qué diferencias hay entre Android e iPhone?</summary>
+    <table>
+      <tr><th></th><th>🤖 Android</th><th>🍎 iPhone</th></tr>
+      <tr><td>Qué es</td><td>App instalada (APK)</td><td>La misma app como web, con icono en la pantalla de inicio</td></tr>
+      <tr><td>Instalación</td><td>Descargar e instalar el archivo una vez</td><td>Safari → Compartir → «Añadir a pantalla de inicio»</td></tr>
+      <tr><td>Mejoras</td><td>Se descargan solas al abrir; avisa y puedes aplicarlas. Si una falla, vuelve a la anterior</td><td>Siempre se abre con la última versión, sin avisos</td></tr>
+      <tr><td>Sin internet</td><td>El menú abre; el mapa y las fotos necesitan internet</td><td>Necesita internet para abrir</td></tr>
+      <tr><td>Sonido</td><td>Normal</td><td>No suena con el interruptor de silencio activado</td></tr>
+      <tr><td>Progreso</td><td>Se guarda en el móvil</td><td>Se guarda en el icono añadido; el de Safari no pasa a él</td></tr>
+    </table>
+    <p style="margin:10px 0 0"><small>El progreso no se sincroniza entre Android e iPhone. El archivo de Android no se puede instalar en iPhone. Si tienes Android, usa la app (no la web): se actualiza con más seguridad.</small></p>
+  </details>
 
   <p><small>La app solo usa internet para el mapa, las fotos y las mejoras. No pide cuentas ni recoge datos personales; tu progreso se guarda en tu móvil.</small></p>
 </main>
