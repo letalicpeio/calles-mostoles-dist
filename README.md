@@ -2,7 +2,7 @@
 
 App Android para memorizar las calles de Móstoles.
 
-- **Instalar:** descarga el último `.apk` de [Releases](../../releases) (las versiones `apk-*`) e instálalo en tu móvil Android.
+- **Instalar:** abre https://letalicpeio.github.io/calles-mostoles-dist/ en tu móvil Android y pulsa «Descargar la app».
 - **Actualizaciones:** la app descarga sola las mejoras del juego al abrirse (release `web`). Cuando hay una versión nueva de la propia app, te lo avisa y te lleva a esta página.
 
 Este repositorio solo contiene los archivos de distribución. El código fuente es privado.

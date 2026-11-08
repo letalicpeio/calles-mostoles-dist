@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calles de Móstoles · descarga</title>
+<meta name="description" content="Descarga la app Calles de Móstoles para Android.">
+<style>
+:root{color-scheme:dark;--bg:#0f172a;--card:#1e293b;--tx:#e2e8f0;--mut:#94a3b8;--ac:#38bdf8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:520px;margin:0 auto;padding:28px 16px 40px}
+h1{font-size:1.7rem;margin:0 0 4px}
+p.sub{color:var(--mut);margin:0 0 22px}
+.btn{display:block;text-align:center;background:var(--ac);color:#06202e;font-weight:700;font-size:1.15rem;text-decoration:none;padding:16px;border-radius:14px}
+.btn:active{filter:brightness(.9)}
+.ver{color:var(--mut);font-size:.85rem;text-align:center;margin:8px 0 26px;min-height:1.3em}
+.card{background:var(--card);border-radius:14px;padding:14px 16px;margin:0 0 14px}
+.card h2{font-size:1rem;margin:0 0 8px}
+ol,ul{margin:0;padding-left:1.2rem}
+li{margin:6px 0}
+.warn{border-left:4px solid #f59e0b}
+small{color:var(--mut)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Calles de Móstoles</h1>
+  <p class="sub">App para memorizar las calles de Móstoles. Solo para Android.</p>
+
+  <a class="btn" id="dl" href="https://github.com/letalicpeio/calles-mostoles-dist/releases/latest/download/CallesMostoles.apk">⬇️ Descargar la app</a>
+  <div class="ver" id="ver"></div>
+
+  <div class="card">
+    <h2>Cómo instalarla</h2>
+    <ol>
+      <li>Pulsa <b>Descargar la app</b> y espera a que termine.</li>
+      <li>Abre el archivo descargado (en «Descargas» o en la notificación). Si Android lo pide, permite <b>«Instalar apps desconocidas»</b> para el navegador y vuelve a abrir el archivo.</li>
+      <li>Pulsa <b>Instalar</b> y abre «Calles de Móstoles».</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Después</h2>
+    <ul>
+      <li>No tendrás que volver a instalar nada: las mejoras se descargan solas al abrir la app, con internet.</li>
+      <li>Verás un aviso verde con las novedades y un botón «Aplicar ahora».</li>
+    </ul>
+  </div>
+
+  <div class="card warn">
+    <h2>Si ya tenías una versión anterior de prueba</h2>
+    <p style="margin:0">Desinstálala antes de instalar esta (la firma ha cambiado). Perderás el progreso de la versión de prueba.</p>
+  </div>
+
+  <p><small>La app solo usa internet para el mapa, las fotos y las mejoras. No pide cuentas ni recoge datos personales; tu progreso se guarda en tu móvil.</small></p>
+</main>
+<script>
+// Muestra la versión publicada (si GitHub no responde, simplemente no se muestra)
+fetch("https://api.github.com/repos/letalicpeio/calles-mostoles-dist/releases/latest")
+  .then(r => r.ok ? r.json() : null)
+  .then(j => {
+    if (!j) return;
+    const f = (j.published_at || "").slice(0, 10).split("-").reverse().join("/");
+    document.getElementById("ver").textContent = "Última versión: " + (j.name || j.tag_name || "") + (f ? " · " + f : "");
+  })
+  .catch(() => {});
+</script>
+</body>
+</html>
