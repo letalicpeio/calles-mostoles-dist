@@ -1,6 +1,6 @@
-# Calles de Móstoles
+# Callejero juego
 
-App para aprender y repasar las calles de Móstoles.
+App para aprender y repasar las calles de Móstoles y Leganés.
 
 **Para instalarla:** abre desde tu móvil <https://letalicpeio.github.io/calles-mostoles-dist/> y sigue los pasos. Funciona en Android y en iPhone.
 
