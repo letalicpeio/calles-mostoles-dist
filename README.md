@@ -1,6 +1,6 @@
 # Callejero juego
 
-App para aprender y repasar las calles de Móstoles, Leganés, Parla y Aldea del Fresno.
+App para aprender y repasar las calles de Móstoles, Leganés, Parla, Alcorcón, Fuenlabrada y Aldea del Fresno.
 
 **Para instalarla:** abre desde tu móvil <https://letalicpeio.github.io/calles-mostoles-dist/> y sigue los pasos. Funciona en Android y en iPhone.
 
